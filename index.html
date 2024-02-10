@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicoding Final Project 1</title>
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+    <header class="navbar-container">
+        <div class="logo">InteriorC</div>
+        <nav class="navbar-list">
+            <ul><a href="#home">Home</a></ul>
+            <ul><a href="#service">Service</a></ul>
+            <ul><a href="#design">Design</a></ul>
+            <ul><a href="#testimoni">Testimoni</a></ul>
+            <ul><a href="#about">About Us</a></ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <article id="home">
+                <h1>We will make your dream home come true</h1>
+            </article>
+            <article id="service">
+                <div class="title-s">Our Service</div>
+                <div class="content-s">
+                    <div  class="card">
+                        <div class="box">
+                            <img src="asset/image/logo1.png" alt="logo">
+                            <h3>Interior Design</h3>
+                            <p>Layouting, Detail drawing, Map layout, Perspective view</p>
+                        </div>
+                    </div>
+                    <div  class="card">
+                        <div class="box">
+                            <img src="asset/image/logo2.png" alt="logo">
+                            <h3>Custom Furniture</h3>
+                            <p>Plywood base inner and outer fin, Laminate (HPL) Fitting</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="asset/image/logo3.png" alt="logo">
+                            <h3>Interior Construction</h3>
+                            <p>Layouting, Detail drawing, Map layout, Perspective view</p>
+                        </div> 
+                    </div>
+                </div>
+            </article>
+            <article id="plus">
+                <div class="title-p">Why choose InteriorC ?</div>
+                <div class="content-p">
+                    <div  class="card">
+                        <div class="box">
+                            <img src="asset/image/logo6.png" alt="logo">
+                            <h3>Trusted and guaranteed company</h3>
+                        </div>
+                    </div>
+                    <div  class="card">
+                        <div class="box">
+                            <img src="asset/image/logo5.png" alt="logo">
+                            <h3>Competent and experienced workers</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="asset/image/logo4.png" alt="logo">
+                            <h3>result in accordance with the request</h3>
+                        </div> 
+                    </div>
+                </div>
+            </article>
+            <article id="design">
+                <div class="title-d">Our Design</div>
+                <div id="content-d">
+                    <img src="asset/image/design1.jpg" alt="design">
+                    <img src="asset/image/design2.jpg" alt="design">
+                    <img src="asset/image/design3.jpg" alt="design">
+                    <img src="asset/image/design4.jpg" alt="design">
+                    <img src="asset/image/design5.jpg" alt="design">
+                    <img src="asset/image/design6.jpg" alt="design">
+                </div>
+            </article>
+            <article id="testimoni">
+                <div class="title-t">Testimoni</div>
+                <div class="content-t">
+                    <div class="card">
+                        <div class="box">
+                            <img src="asset/image/person1.png" alt="person icon">
+                            <p>" I use InteriorC design services for my office, the design is very neat and service is friendly "</p>
+                            <h6>Gibran Fahriel</h6>
+                            <h6>( Office workers)</h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="asset/image/person2.png" alt="person icon">
+                            <p>" can make custom designs and the response is very fast, i highly recommend this"</p>
+                            <h6>Joe Crier</h6>
+                            <h6>( CEO PT.Makeall)</h6>
+                        </div> 
+                    </div>
+                </div>
+            </article>
+        </div>
+        <aside id="about">
+            <div class="title-o">About Us</div>
+            <div class="foto">
+                <img src="asset/image/foto.png" alt="">
+            </div>
+            <div class="data">
+                <h4>Chairunnisa</h4>
+                <p>I am the owner of the interiorC business which was founded in 2024 and is engaged in interior design of a room, building, or furniture. interiorC always prioritizes customer satisfaction and friendly service, which is certain with high quality work.</p>
+                <button>Order Our Service</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>copyright&copy;2024InteriorC</p>
+    </footer>
+
+    <script>
+        var slider = document.getElementById('content-d');
+        var images = slider.getElementsByTagName('img');
+        var index = 0;
+
+        function slideShow() {
+            for (var i = 0; i < images.length; i++) {
+                images[i].style.display = 'none';
+            }
+            index++;
+
+            if (index > images.length) {
+                index = 1;
+            }
+            images[index - 1].style.display = 'block';
+            setTimeout(slideShow, 3000);
+        }
+
+        slideShow();
+    </script>
+</body>
+</html>
