@@ -94,7 +94,7 @@ body {
     object-fit: cover;
 }
 .foto img{
-    width: 30%;
+    width: 25%;
     border-radius: 50%;
     display: block;
     margin: auto;
@@ -105,7 +105,7 @@ body {
     margin: auto;
 }
 .data h2{
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
     font-weight:bold;
 }
@@ -155,5 +155,8 @@ footer p{
     }
     .content-s, .content-p,.content-t{
         display: block;
+    }
+    .foto img{
+        width: 35%;
     }
 }
